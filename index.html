@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario Emisora</title>
+</head>
+<body>
+    <h1>Formulario Emisora</h1>
+    <p>Juan Andrés Alvarez Velásquez</p>
+    <h4>Análisis y desarrollo de Software 2024</h4>
+    <p>Por favor ingresa la siguiente información: </p>
+    <form action="post">
+        <fieldset>
+            <label for="full-name">Ingresa tu nombre completo: <input id="full-name" name="full-name" type="text" required /></label>
+            <label for="id">Ingresa tu número de documento: <input id="id"name="id" type="number" required min="10"></label>
+            <label for="date">Ingresa tu fecha de nacimiento: <input id="date"name="date" type="date" min="2019-12-25" required></label>
+            <label for="mail">Ingresa tu E-mail: <input id="mail" name="mail" type="mail" required /></label>
+            <label for="city">Ingresa tu ciudad de residencia: <input id="city" name="city" type="text" required /></label>
+            <label for="origin">Ingresa tu ciudad de origen: <input id="origin" name="origin" type="text" required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Tu artista favorito: </legend>
+            <label for="artist">Ingresa el nombre de tu artista: <input id="artist" name="artist" type="text" required /></label>
+            <h4>Ingresa tres canciones: </h4>
+            <label for="one">Canción 1: <input id="one" name="one" type="text" required /></label>
+            <label for="two">Canción 1: <input id="two" name="two" type="text" required /></label>
+            <label for="three">Canción 1: <input id="three" name="three" type="text" required /></label> 
+        </fieldset>
+        <input type="button" value="Ingresar" id="enviar">
+    </form>
+    <hr>
+    <button id="mostrar">ver registros</button>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>identificación</th>
+                <th>fecha nacimiento</th>
+                <th>correo</th>
+                <th>ciudad</th>
+                <th>origen</th>
+                <th>Artista</th>
+                <th>canción 1</th>
+                <th>canción 2</th>
+                <th>canción 3</th>
+            </tr>
+        </thead>
+        <tbody id="registros">
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <p>Desarrollado por Juan Andrés Alvarez Velásquez</p>
+    <script src="./form.js"></script>
+</body>
+</html>
